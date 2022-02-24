@@ -1,0 +1,8 @@
+C:\Users\antho\Code\ufynd Scraper\BookingScraper\BookingScraper\bin\publish\BookingScraper.exe
+C:\Users\antho\Code\ufynd Scraper\BookingScraper\BookingScraper\bin\publish\BookingScraper.dll
+C:\Users\antho\Code\ufynd Scraper\BookingScraper\BookingScraper\bin\publish\BookingScraper.deps.json
+C:\Users\antho\Code\ufynd Scraper\BookingScraper\BookingScraper\bin\publish\BookingScraper.runtimeconfig.json
+C:\Users\antho\Code\ufynd Scraper\BookingScraper\BookingScraper\bin\publish\BookingScraper.pdb
+C:\Users\antho\Code\ufynd Scraper\BookingScraper\BookingScraper\bin\publish\HtmlAgilityPack.dll
+C:\Users\antho\Code\ufynd Scraper\BookingScraper\BookingScraper\bin\publish\Newtonsoft.Json.dll
+C:\Users\antho\Code\ufynd Scraper\BookingScraper\BookingScraper\bin\publish\nunit.framework.dll
