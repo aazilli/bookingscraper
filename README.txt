@@ -6,6 +6,7 @@ Viewing the scraper source code:
 Executing the scraper:
 - The executable BookingScraper.exe can be found under BookingScraper/bin/Debug/net6.0
 - Executing it will create (or recreate) a booking.json file in the directory
+- Requires .NET Framework to be executed
 
 Viewing the unit test source code:
 - The source code UnitTest1.cs can be found in the ScraperTests directory
