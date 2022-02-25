@@ -13,6 +13,7 @@ namespace Scraper
         public int Stars { get; set; }
         public decimal Review_score { get; set; }
         public int Review_count { get; set; }
+        public string Scoreword { get; set; }
         public string Description { get; set; }
         public List<string> Room_types { get; set; }
         public List<Hashtable> Alt_hotels { get; set; }
@@ -195,6 +196,7 @@ namespace Scraper
                 Name = Parser.get_name(doc),
                 Address = Parser.get_address(doc),
                 Stars = Parser.get_stars(doc),
+                Scoreword = (string)Parser.get_score(doc)["scoreword"],
                 Review_score = (decimal)Parser.get_score(doc)["score_num"],
                 Review_count = (int)Parser.get_score(doc)["review_count"],
                 Description = Parser.get_description(doc),
