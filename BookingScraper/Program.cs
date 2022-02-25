@@ -35,7 +35,7 @@ namespace Scraper
         {
             var address = doc.GetElementbyId("hp_address_subtitle");
             string[] address_parts = address.InnerText.Split(",");
-            string number = address_parts[0].Trim().Split(" ", 2)[1]; // Unit test: Assert split only into 2
+            string number = address_parts[0].Trim().Split(" ", 2)[1];
             string street = address_parts[0].Trim().Split(" ", 2)[0];
             string city_region = address_parts[1].Trim();
             string postal_code = address_parts[2].Trim().Split(" ", 2)[0];
@@ -96,7 +96,7 @@ namespace Scraper
             // Retrieves score, scoreword, and number of reviews of hotel
         {
             var score = doc.DocumentNode.SelectSingleNode("//div[contains(@class, 'featured_review_score')]");
-            string[] score_parts_raw = score.InnerText.Split("\n");
+            string[] score_parts_raw = score.InnerText.Split(new char[]{'\n', '\r'});
             var score_parts_clean = new List<string>();
 
             foreach (string part in score_parts_raw)
@@ -126,7 +126,7 @@ namespace Scraper
         {
             var description = doc.DocumentNode.SelectSingleNode("//div[contains(@class, 'hotel_description_wrapper_exp')]");
             description.SelectSingleNode("//div[contains(@class, 'chain-content')]").Remove();
-            var description_text = description.InnerText.Trim().Replace("\n", "");
+            var description_text = description.InnerText.Trim().Replace("\n", "").Replace("\r","");
 
             return description_text;
         }
